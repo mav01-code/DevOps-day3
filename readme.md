@@ -1,50 +1,89 @@
-1  ls -la
-2  mkdir git_lab
-3  cd git_lab
-4  git init
-20  ssh-keygen
-28  ls -la ~/.ssh
-29  cat ~/.ssh/id_ed25519.pub
-30  cd git_lab
-31  git branch
-32  git status
-33  git push -u master
-34  git clone git@github.com:mav01-code/DevOps-day3.git
-35  git branch
-36  git status
-37  ls
-38  git add .
-39  git status
-40  git commit -m "File1"
-41  git push -u origin main
-42  git push -f origin main
-43  git push -f origin master
-44  git remote -v
-45  git remote add origin git@github.com:mav01-code/DevOps-day3.git
-46  git push -f origin master
-47  git branch
-48  git branch main
-49  git branch
-50  git merge main
-51  git branch master
-52  git branch main
-53  git checkout main
-54  git merge master
-55  git status
-56  git log
-57  git push -u origin main
-58  git push -f origin main
-59  git checkout cse
-60  git branch
-61  nano manual
-62  git status
-63  git add .
-64  git commit -m "Added manual"
-65  git merge main
-66  git branch
-67  git branch main
-68  git checkout  main
-69  git status
-70  git push -u origin main
-71  git merge cse
-72  git push -u origin main
+# Git Commands - DevOps-Day3
+
+This document lists the Git commands used while working on the `DevOps-Day3` project.
+
+---
+
+## 1. Initial Setup
+```bash
+ls -la                    # List all files and directories  
+mkdir git_lab             # Create a new directory named 'git_lab'  
+cd git_lab                # Move into the 'git_lab' directory  
+git init                  # Initialize a new Git repository  
+```
+
+---
+
+## 2. SSH Key Generation & Setup
+```bash
+ssh-keygen                # Generate a new SSH key pair  
+ls -la ~/.ssh             # Verify SSH key exists  
+cat ~/.ssh/id_ed25519.pub # Display the public SSH key (to add it to GitHub)  
+```
+
+---
+
+## 3. Working with the Repository
+```bash
+cd git_lab                
+git branch                # Check the current branch  
+git status                # Check the status of the repository  
+```
+
+---
+
+## 4. Cloning and Remote Setup
+```bash
+git clone git@github.com:mav01-code/DevOps-day3.git  # Clone the repository  
+git remote -v               # Verify remote repository  
+git remote add origin git@github.com:mav01-code/DevOps-day3.git  # Add remote manually  
+```
+
+---
+
+## 5. Branch Management
+```bash
+git branch                 # List all branches  
+git branch main            # Create 'main' branch  
+git branch master          # Create 'master' branch  
+git checkout main          # Switch to 'main' branch  
+git merge master           # Merge 'master' into 'main'  
+git branch cse             # Create 'cse' branch  
+git checkout cse           # Switch to 'cse' branch  
+git merge main             # Merge 'main' into 'cse'  
+git merge cse              # Merge 'cse' into 'main'  
+```
+
+---
+
+## 6. Tracking and Committing Changes
+```bash
+ls                         # List files in the directory  
+git add .                  # Stage all changes  
+git status                 # Check status of staged files  
+git commit -m "File1"      # Commit changes with message  
+nano manual                # Open 'manual' file for editing  
+git add .                  # Stage changes  
+git commit -m "Added manual" # Commit with a descriptive message  
+```
+
+---
+
+## 7. Pushing Changes to Remote Repository
+```bash
+git push -u origin main     # Push changes to 'main' branch  
+git push -f origin main     # Force push changes to 'main' branch  
+git push -f origin master   # Force push changes to 'master' branch  
+git push -u origin main     # Push changes after merging  
+```
+
+---
+
+## 8. Checking Repository History
+```bash
+git log                     # View commit history  
+```
+
+---
+
+This README serves as a reference for Git commands used during the `DevOps-Day3` project. 🚀
