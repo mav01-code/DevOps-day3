@@ -2,33 +2,11 @@
     2  mkdir git_lab
     3  cd git_lab
     4  git init
-    5  git branch
-    6  git branch cse
-    7  git branch
-    8  git branch cse
-    9  nano file1
-   10  git status
-   11  git branch
-   12  git add file1
-   13  git status
-   14  git branch
-   15  git commit -m "File1"
-   16  git status
-   17  git branch
-   18  git branch cse
-   19  git branch
-   20  ssh-keygen
-   21  ~/.ssh
-   22  ~./ssh
-   23  ls -la
-   24  cd ..
-   25  ls -la
-   26  ~./ssh
-   27  ls -la ~./ssh
-   28  ls -la ~/.ssh
-   29  cat ~/.ssh/id_ed25519.pub
-   30  cd git_lab
-   31  git branch
+	20  ssh-keygen
+	28  ls -la ~/.ssh
+	29  cat ~/.ssh/id_ed25519.pub
+	30  cd git_lab
+	31  git branch
    32  git status
    33  git push -u master
    34  git clone git@github.com:mav01-code/DevOps-day3.git
